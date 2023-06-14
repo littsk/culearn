@@ -1,0 +1,1 @@
+cuda_add_executable(broadcast_in_warp broadcast_in_warp.cu)
