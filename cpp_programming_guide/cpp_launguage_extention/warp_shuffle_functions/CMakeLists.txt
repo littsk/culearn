@@ -1,1 +1,3 @@
 cuda_add_executable(broadcast_in_warp broadcast_in_warp.cu)
+cuda_add_executable(reduce_sum_in_warp reduce_sum_in_warp.cu)
+cuda_add_executable(all_reduce_sum_in_warp all_reduce_sum_in_warp.cu)
