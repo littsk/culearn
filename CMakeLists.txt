@@ -15,4 +15,12 @@ if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
     set(CMAKE_CUDA_ARCHITECTURES "sm80")
 endif()
 
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    # add_compile_options($<$<COMPILE_LANGUAGE:CUDA>: -G -g -O0>)
+    set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} -G -g")
+endif()
+
+
+
 add_subdirectory(cpp_programming_guide)
+add_subdirectory(dnn)
