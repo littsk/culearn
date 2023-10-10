@@ -24,3 +24,4 @@ endif()
 
 add_subdirectory(cpp_programming_guide)
 add_subdirectory(dnn)
+add_subdirectory(base)
